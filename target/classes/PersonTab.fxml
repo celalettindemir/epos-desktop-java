@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxWidth="250.0" minWidth="250.0" prefHeight="100.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OrderSelection.PersonTab.PersonTabController">
+   <children>
+      <VBox alignment="TOP_CENTER" minWidth="250.0" styleClass="Product-Bar" stylesheets="@OrderSelection.css" HBox.hgrow="ALWAYS">
+         <children>
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" hmax="0.0" maxWidth="250.0" minViewportWidth="350.0" minWidth="250.0" pannable="true" prefHeight="800.0" prefWidth="250.0" style="-fx-background-color: black;" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="250.0" minHeight="-Infinity" minWidth="250.0">
+                     <children>
+                        <VBox fx:id="SelectedProductParent" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="200.0" minHeight="-Infinity" minWidth="200.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,7 @@
+.Sides-Buttons{
+-fx-border-color:#474747;
+-fx-border-radius:4;
+    -fx-padding: 5px;
+    -fx-border-insets: 15px;
+    -fx-background-insets: 15px;
+}

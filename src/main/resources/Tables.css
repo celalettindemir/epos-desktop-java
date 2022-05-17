@@ -1,0 +1,30 @@
+.Transparent-Plane{
+        -fx-background-color: transparent;
+}
+
+
+.Menu-Bar{
+    -fx-background-color: white;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #800080;
+    -fx-min-width: 200;
+    -fx-max-width: 200;
+}
+
+.Table-Bar{
+    -fx-background-color: transparent;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #800080;
+}
+.Right-Orders-Bar{
+    -fx-background-color: white;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #800080;
+    -fx-min-width: 200;
+    -fx-max-width: 200;
+}
+
+

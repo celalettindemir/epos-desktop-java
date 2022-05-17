@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox minWidth="550.0" prefHeight="720.0" prefWidth="800.0" stylesheets="@Sides.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Sides.SidesController">
+   <children>
+      <GridPane HBox.hgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="500.0" minWidth="500.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="500.0" minHeight="500.0" prefHeight="500.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+         </rowConstraints>
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnSpan="3" GridPane.rowSpan="3">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" style="-fx-min-width: 500;" styleClass="Left-Menu-Bar" stylesheets="@OrderSelection.css" HBox.hgrow="ALWAYS">
+                           <children>
+                              <ScrollPane fitToWidth="true" hbarPolicy="NEVER" minViewportWidth="350.0" minWidth="350.0" prefHeight="800.0" prefWidth="350.0" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <VBox fx:id="FrameResizer" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="350.0">
+                                       <children>
+                                          <VBox fx:id="ScrollArea" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <JFXMasonryPane fx:id="SideParent" HSpacing="0.0" VSpacing="0.0" cellHeight="75.0" cellWidth="75.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" style="-fx-min-width: 250; -fx-max-width: 250; -fx-pref-width: 250;" styleClass="Right-Orders-Bar" stylesheets="@OrderSelection.css" HBox.hgrow="NEVER">
+                           <children>
+                              <JFXTabPane fx:id="PersonTab1" VBox.vgrow="ALWAYS">
+                                 <tabs>
+                                    <Tab text="Side">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox layoutX="25.0" layoutY="34.0" prefHeight="279.0" prefWidth="118.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yeni Side" textAlignment="CENTER" wrappingWidth="176.13671875" VBox.vgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font size="16.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <JFXTextField fx:id="addSideText" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" promptText="İsim" />
+                                                            <JFXTextField fx:id="addSidePrice" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" promptText="Fiyat" />
+                                                            <JFXButton onAction="#addSide" prefHeight="39.0" prefWidth="154.0" styleClass="Sides-Buttons" text=" ">
+                                                               <graphic>
+                                                                  <FontAwesomeIconView fill="#474747" glyphName="PLUS" size="16" />
+                                                               </graphic>
+                                                               <font>
+                                                                  <Font size="1.0" />
+                                                               </font></JFXButton>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Side Düzenle" textAlignment="CENTER" wrappingWidth="176.13671875">
+                                                               <font>
+                                                                  <Font size="16.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <JFXComboBox fx:id="editSideSelection" prefHeight="25.0" prefWidth="154.0" />
+                                                            <JFXTextField fx:id="editSideNewText" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" promptText="İsim" />
+                                                            <JFXTextField fx:id="editSideNewPrice" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" promptText="Fiyat" />
+                                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <JFXButton onAction="#deleteSide" prefHeight="39.0" prefWidth="154.0" styleClass="Sides-Buttons" text=" ">
+                                                                     <graphic>
+                                                                        <FontAwesomeIconView fill="#474747" glyphName="MINUS" size="16" />
+                                                                     </graphic>
+                                                                     <font>
+                                                                        <Font size="1.0" />
+                                                                     </font></JFXButton>
+                                                                  <JFXButton onAction="#editSide" prefHeight="39.0" prefWidth="154.0" styleClass="Sides-Buttons" text=" ">
+                                                                     <graphic>
+                                                                        <FontAwesomeIconView glyphName="CHECK" size="16" />
+                                                                     </graphic>
+                                                                     <font>
+                                                                        <Font size="1.0" />
+                                                                     </font></JFXButton>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </JFXTabPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="PopupBlur" opacity="0.5" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: black;" visible="false" GridPane.columnSpan="3" GridPane.rowSpan="3" />
+            <HBox fx:id="PopUpFrame" maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" prefHeight="500.0" prefWidth="500.0" visible="false" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.vgrow="NEVER" />
+         </children>
+      </GridPane>
+   </children>
+</HBox>

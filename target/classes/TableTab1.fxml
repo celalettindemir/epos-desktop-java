@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToWidth="true" hbarPolicy="NEVER" minViewportWidth="550.0" minWidth="550.0" prefHeight="800.0" prefWidth="550.0" vbarPolicy="NEVER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Table.TableTab.TableTab1Controller">
+   <content>
+      <VBox fx:id="FrameResizer" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="550.0">
+         <children>
+            <VBox fx:id="ScrollArea" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <JFXMasonryPane fx:id="TableParent" HSpacing="0.0" VSpacing="0.0" cellHeight="100.0" cellWidth="100.0" limitRow="100000" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

@@ -1,0 +1,23 @@
+.Main-Body{
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #474747;
+    -fx-border-width: 1.5;
+}
+
+.Button-Enter{
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #474747;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #474747;
+}
+
+.Invisible-Background{
+    -fx-background-color: transparent;
+}
+
+.Slide-Bar{
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #474747;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #474747;
+}

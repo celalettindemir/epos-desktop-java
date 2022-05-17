@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="TopBarFrame" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="40.0" prefWidth="800.0" styleClass="Top-Bar" stylesheets="@SharedTopBar.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Shared.SharedTopBar.SharedTopBarController">
+   <children>
+      <HBox layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#Dragged" onMousePressed="#Pressed" onMouseReleased="#Released" prefHeight="40.0" styleClass="Top-Bar-Frame" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane HBox.hgrow="ALWAYS">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+               </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Top-Bar-Text" text="Rest Adı" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+                  <Text fill="#cd2d2d" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Top-Bar-Text" text="DAL Software" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" onMouseClicked="#Keyboard" prefHeight="35.0" prefWidth="35.0" styleClass="Top-Bar-IconFrame">
+                           <children>
+                              <FontAwesomeIconView fill="WHITESMOKE" glyphName="KEYBOARD_ALT" size="25" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" onMouseClicked="#Home" prefHeight="35.0" prefWidth="35.0" styleClass="Top-Bar-IconFrame">
+                           <children>
+                              <FontAwesomeIconView fill="WHITESMOKE" glyphName="HOME" size="25" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" onMouseClicked="#LogOutFun" prefHeight="35.0" prefWidth="35.0" styleClass="Top-Bar-IconFrame">
+                           <children>
+                              <MaterialDesignIconView fill="WHITESMOKE" glyphName="EXPORT" size="28">
+                                 <VBox.margin>
+                                    <Insets left="3.0" />
+                                 </VBox.margin>
+                              </MaterialDesignIconView>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" onMouseClicked="#MinApp" prefHeight="35.0" prefWidth="35.0" styleClass="Top-Bar-IconFrame">
+                           <children>
+                              <FontAwesomeIconView fill="WHITESMOKE" glyphName="MINUS" size="20" wrappingWidth="15.714285850524902">
+                                 <VBox.margin>
+                                    <Insets top="15.0" />
+                                 </VBox.margin>
+                              </FontAwesomeIconView>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" onMouseClicked="#MaxApp" prefHeight="35.0" prefWidth="35.0" styleClass="Top-Bar-IconFrame">
+                           <children>
+                              <FontAwesomeIconView fill="WHITESMOKE" glyphName="CIRCLE" size="20" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" onMouseClicked="#CloseApp" prefHeight="35.0" prefWidth="35.0" styleClass="Top-Bar-IconFrame">
+                           <children>
+                              <FontAwesomeIconView fill="WHITESMOKE" glyphName="TIMES" size="20" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

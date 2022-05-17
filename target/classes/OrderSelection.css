@@ -1,0 +1,55 @@
+.Left-Menu-Bar{
+    -fx-background-color: white;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #800080;
+    -fx-min-width: 200;
+}
+
+.Right-Orders-Bar{
+    -fx-background-color: white;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #800080;
+    -fx-min-width: 250;
+    -fx-max-width: 250;
+}
+
+.Product-Bar{
+    -fx-background-color: blue;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #800080;
+}
+
+.Left-Menu-ProductType-Bar{
+    -fx-background-color: white;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #800080;
+    -fx-min-width: 200;
+    -fx-max-width: 200;
+}
+
+.Accept-Button{
+-fx-background-color:green;
+}
+
+.Cancel-Button{
+-fx-background-color:red;
+}
+
+.Popup{
+-fx-background-color:white;
+    -fx-border-color: #800080;
+    -fx-border-width: 1.5;
+}
+
+.tab
+{
+   /* -fx-pref-width: 100;*/
+    -fx-pref-height: 85;
+
+}
+
+

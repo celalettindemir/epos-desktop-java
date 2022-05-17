@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox minWidth="550.0" prefHeight="720.0" prefWidth="800.0" stylesheets="@Table.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Table.TableController">
+   <children>
+      <VBox alignment="CENTER" style="-fx-min-width: 500;" styleClass="Left-Menu-Bar" stylesheets="@OrderSelection.css" HBox.hgrow="ALWAYS">
+         <children>
+            <JFXTabPane fx:id="TableTabPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="250.0" style="-fx-min-width: 250; -fx-max-width: 250; -fx-pref-width: 250;" styleClass="Right-Orders-Bar" stylesheets="@OrderSelection.css">
+         <children>
+            <JFXTabPane fx:id="PersonTab1" VBox.vgrow="ALWAYS">
+               <tabs>
+                  <Tab text="Kat">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox layoutX="25.0" layoutY="34.0" prefHeight="279.0" prefWidth="118.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yeni Kat" textAlignment="CENTER" wrappingWidth="176.13671875" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXTextField fx:id="addFloorText" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" promptText="İsim" />
+                                          <JFXButton onAction="#addFloor" prefHeight="39.0" prefWidth="154.0" styleClass="Table-Buttons" text=" ">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#474747" glyphName="PLUS" size="16" textAlignment="CENTER" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="1.0" />
+                                             </font></JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kat Düzenle" textAlignment="CENTER" wrappingWidth="176.13671875">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXComboBox fx:id="editFloorSelection" prefHeight="25.0" prefWidth="154.0" />
+                                          <JFXTextField fx:id="editFloorNewText" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" promptText="İsim" />
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton onAction="#deleteFloor" prefHeight="39.0" prefWidth="154.0" styleClass="Table-Buttons" text=" ">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#474747" glyphName="MINUS" size="16" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="1.0" />
+                                                   </font></JFXButton>
+                                                <JFXButton onAction="#editFloor" prefHeight="39.0" prefWidth="154.0" styleClass="Table-Buttons" text=" ">
+                                                   <graphic>
+                                                      <FontAwesomeIconView glyphName="CHECK" size="16" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="1.0" />
+                                                   </font></JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Masa">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="279.0" prefWidth="118.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Yeni Masa" textAlignment="CENTER" wrappingWidth="176.13671875" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXTextField fx:id="addTableCount" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" promptText="Adet" />
+                                          <JFXButton onAction="#addTable" prefHeight="39.0" prefWidth="154.0" styleClass="Table-Buttons" text=" " VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font size="1.0" />
+                                             </font>
+                                             <graphic>
+                                                <FontAwesomeIconView fill="#474747" glyphName="PLUS" size="16" />
+                                             </graphic></JFXButton>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Masa Düzenle" textAlignment="CENTER" wrappingWidth="176.13671875">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <JFXComboBox fx:id="editTableFloorSelection" prefHeight="25.0" prefWidth="154.0" />
+                                          <JFXTextField fx:id="deleteTableCount" alignment="CENTER" prefHeight="35.0" prefWidth="246.0" />
+
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <JFXButton onAction="#deleteTable" prefHeight="39.0" prefWidth="154.0" styleClass="Table-Buttons" text=" ">
+                                                   <graphic>
+                                                      <FontAwesomeIconView fill="#474747" glyphName="MINUS" size="16" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="1.0" />
+                                                   </font></JFXButton>
+                                                <JFXButton onAction="#editTable" prefHeight="39.0" prefWidth="154.0" styleClass="Table-Buttons" text=" ">
+                                                   <graphic>
+                                                      <FontAwesomeIconView glyphName="CHECK" size="16" />
+                                                   </graphic>
+                                                   <font>
+                                                      <Font size="1.0" />
+                                                   </font></JFXButton>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

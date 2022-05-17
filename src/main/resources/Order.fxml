@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Order.OrderController">
+   <children>
+      <JFXButton contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#OpenTablePage" style="-fx-background-color: a0a0a0;" text="Masada" HBox.hgrow="ALWAYS">
+         <graphic>
+            <MaterialDesignIconView glyphName="PACKAGE_DOWN" size="300" />
+         </graphic></JFXButton>
+      <JFXButton contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#OpenTakeaway" text="Takeaway" HBox.hgrow="ALWAYS">
+         <graphic>
+            <MaterialDesignIconView glyphName="PACKAGE_UP" size="300" />
+         </graphic></JFXButton>
+   </children>
+</HBox>

@@ -1,0 +1,15 @@
+.Menu-Buttons{
+-fx-border-color:#474747;
+-fx-border-radius:4;
+    -fx-padding: 5px;
+    -fx-border-insets: 15px;
+    -fx-background-insets: 15px;
+}
+
+.New-Product{
+-fx-border-color: #474747;
+                   -fx-border-insets: 5;
+                   -fx-border-width: 3;
+                   -fx-border-style: dashed;
+                   -fx-border-radius:20;
+}
